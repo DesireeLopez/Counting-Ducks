@@ -29,3 +29,4 @@ public class Main
   }//end main method
 }//end class Main
 
+//practicing with swing in class
