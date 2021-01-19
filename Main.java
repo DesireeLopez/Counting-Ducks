@@ -40,12 +40,22 @@ public class Main
     JLabel label1 = new JLabel ("Count the ducks");
     JTextField textfield = new JTextField (10);
 
+
     panel1.add(button1);
     panel1.add(button2);
     panel1.add(label1);
     panel1.add(textfield);
+
+ 
+    //--------------Panel 2 --------------
+    JPanel pnl2 = new JPanel (new BorderLayout (10,10));
+    //------------Image 1 - The DUCK-----------
+    ImageIcon duckImg = new ImageIcon ("rubber.jpg", "A Little duck in water");
+    JLabel duckLabelPic = new JLabel (duckImg);
+    pnl2.add (duckLabelPic);
     
-    frame1.getContentPane().add(panel1);
+    frame1.getContentPane().add(BorderLayout.NORTH, panel1);
+    frame1.getContentPane().add(BorderLayout.CENTER, pnl2);
   }//end main method
 }//end class Main
 
